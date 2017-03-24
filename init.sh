@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo A38 Converter Farm --- Initialization started...
