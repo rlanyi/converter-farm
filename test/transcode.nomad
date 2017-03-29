@@ -19,7 +19,7 @@ job "transcode" {
 
     config {
       command = "docker"
-      args    = ["run", "opencoconut/ffmpeg", "-i", "${NOMAD_META_INPUT}", "-f" "webm" "-c:v" "libvpx" "-c:a" "libvorbis" "-" ">" "test.webm"]
+      args    = ["run", "opencoconut/ffmpeg", "-i", "${NOMAD_META_INPUT}", "-f", "webm", "-c:v", "libvpx", "-c:a", "libvorbis", "-", ">", "test.webm"]
     }
   }
 }
