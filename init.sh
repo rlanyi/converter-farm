@@ -7,7 +7,7 @@ curl -O https://releases.hashicorp.com/nomad/0.5.5/nomad_0.5.5_linux_amd64.zip
 sudo unzip consul_0.7.5_linux_amd64.zip -d /usr/local/bin
 sudo unzip nomad_0.5.5_linux_amd64.zip -d /usr/local/bin
 
-apt-get clean
+sudo apt-get clean
 
 consul version
 nomad version
