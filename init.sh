@@ -1,5 +1,7 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 sudo apt-get -y install unzip nano mc net-tools telnet cron logrotate libcgroup1
 sudo mv /etc/cron.daily/logrotate /etc/cron.hourly/logrotate
 
@@ -10,5 +12,4 @@ sudo unzip nomad_0.5.5_linux_amd64.zip -d /usr/local/bin
 
 sudo apt-get clean
 
-consul version
-nomad version
+$DIR/test/nomad-client.sh
