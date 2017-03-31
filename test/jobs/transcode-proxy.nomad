@@ -1,4 +1,4 @@
-job "transcode" {
+job "transcode-proxy" {
   type        = "batch"
   datacenters = ["ams2"]
 
@@ -15,11 +15,15 @@ job "transcode" {
   }
 
   task "tc" {
-    driver = "exec"
+    driver = "docker"
+    resources {
+      memory = 256
+    }
 
     config {
-      command = "docker"
-      args    = ["run", "opencoconut/ffmpeg", "-i", "${NOMAD_META_INPUT}", "-f", "webm", "-c:v", "libvpx", "-c:a", "libvorbis", "-", ">", "test.webm"]
+      image = "opencoconut/ffmpeg"
+      args    = ["-i", "${NOMAD_META_INPUT}", "-f", "webm", "-c:v", "libvpx", "-c:a", "libvorbis", "output.webm"]
+      volumes = ["/home/rancher:/tmp/ffmpeg"]
     }
   }
 }
