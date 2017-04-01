@@ -1,6 +1,6 @@
 #log_level = "DEBUG"
 data_dir = "/tmp/nomad"
-bind_addr = "192.168.1.10"
+bind_addr = "0.0.0.0"
 
 region = "eu"
 
