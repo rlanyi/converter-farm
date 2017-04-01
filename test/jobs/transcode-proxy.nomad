@@ -23,7 +23,7 @@ job "transcode-proxy" {
     config {
       image = "opencoconut/ffmpeg"
       args    = ["-i", "${NOMAD_META_INPUT}", "-f", "webm", "-c:v", "libvpx", "-c:a", "libvorbis", "output.webm"]
-      volumes = ["/home/rancher:/tmp/ffmpeg"]
+      volumes = ["/home/rancher:/tmp/ffmpeg", "/usr/share/fonts:/usr/share/fonts"]
     }
   }
 }
