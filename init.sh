@@ -14,6 +14,7 @@ rm *.zip
 sudo apt-get clean
 
 $DIR/test/nomad-client.sh
+$DIR/test/consul-server.sh
 
 #git clone https://github.com/yaronn/blessed-contrib.git
 #cd blessed-contrib
@@ -23,7 +24,8 @@ $DIR/test/nomad-client.sh
 
 #glances
 
-tail -f /var/log/nomad-client.log
+sleep 5
+tail -f /var/log/nomad-client.log /var/log/consul-server.log
 
 read -p "Nyomj ENTER-t az ujrainditashoz!"
 sudo reboot
