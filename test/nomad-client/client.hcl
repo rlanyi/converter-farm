@@ -6,11 +6,11 @@ region = "eu"
 # be sure to change the datacenter for your different nodes
 datacenter = "a38"
 
-advertise {
-  http = "<IP>:4646"
-  rpc = "<IP>:4647"
-  serf = "<IP>:4648"
-}
+#advertise {
+#  http = "<IP>:4646"
+#  rpc = "<IP>:4647"
+#  serf = "<IP>:4648"
+#}
 
 client {
   enabled = true
