@@ -2,7 +2,7 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-sudo apt-get -y install unzip nano mc net-tools telnet cron logrotate libcgroup1
+sudo apt-get -y install unzip nano mc net-tools telnet cron logrotate screen libcgroup1
 sudo mv /etc/cron.daily/logrotate /etc/cron.hourly/logrotate
 
 curl -O http://192.168.1.147/hashicorp/consul_0.7.5_linux_amd64.zip
