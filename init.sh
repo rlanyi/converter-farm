@@ -21,7 +21,7 @@ $DIR/test/nomad-client.sh
 #cd $DIR
 #nodejs $DIR/blessed-contrib/examples/dashboard.js
 
-glances
+#glances
 
 read -p "Nyomj ENTER-t az ujrainditashoz!"
 sudo reboot
