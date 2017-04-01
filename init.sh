@@ -19,6 +19,6 @@ git clone https://github.com/yaronn/blessed-contrib.git
 cd blessed-contrib
 npm install
 cd $DIR
-node blessed-contrib/examples/dashboard.js
+nodejs blessed-contrib/examples/dashboard.js
 
-reboot
+sudo reboot
