@@ -1,4 +1,4 @@
-log_level = "DEBUG"
+#log_level = "DEBUG"
 data_dir = "/tmp/nomad"
 
 region = "eu"

@@ -1,6 +1,6 @@
 #log_level = "DEBUG"
 data_dir = "/tmp/nomad"
-bind_addr = "0.0.0.0"
+bind_addr = "192.168.1.10"
 
 region = "eu"
 
@@ -32,4 +32,3 @@ consul {
   client_auto_join = true
   auto_advertise = true
 }
-
