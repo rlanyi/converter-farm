@@ -21,4 +21,5 @@ npm install
 cd $DIR
 nodejs blessed-contrib/examples/dashboard.js
 
+read -p "Nyomj ENTER-t az ujrainditashoz!"
 sudo reboot
