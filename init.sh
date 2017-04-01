@@ -23,7 +23,7 @@ $DIR/test/nomad-client.sh
 
 #glances
 
-tail -f /var/log/*.log
+tail -f /var/log/nomad.log
 
 read -p "Nyomj ENTER-t az ujrainditashoz!"
 sudo reboot
